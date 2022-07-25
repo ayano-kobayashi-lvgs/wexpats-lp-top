@@ -4,6 +4,7 @@
  @use "../foundation/variable" as *;
  @use "../object/utility/list" as *;
 
+ // font-size
  .font-xs{
     font-size: 10px;
  }
@@ -20,6 +21,7 @@
     font-size: 16px;
  }
 
+ // l-footer
  .l-footer{
    color: $c-light-gray-04;
 
@@ -37,13 +39,13 @@
       padding-bottom: 25px;
     }
 
-    &__listwrap {
+    &__list-wrap{
       & *{
       width: 374px;
       }
     }
 
-    &__listhead{
+    &__list-head{
       @extend .font-s;
       font-weight: bold;
       margin: 8px 8px 15px 8px;

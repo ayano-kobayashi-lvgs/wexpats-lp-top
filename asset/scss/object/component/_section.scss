@@ -4,6 +4,7 @@
 
  @use "../../foundation/variable" as *;
 
+ // font-size
  .font-ms{
     font-size: 16px;
  }
@@ -12,7 +13,7 @@
     font-size: 32px;
  }
 
-
+// c-section
  .c-section{
     &__content{
         background-color: $c-light-gray-01;

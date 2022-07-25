@@ -4,7 +4,7 @@
    font-size: 16px;
 }
  
-
+// p-for-company
 .p-for-company{
     background-color: $c-white;
 
@@ -32,7 +32,6 @@
         @extend .font-m;
         text-align: center;
         margin: 0 auto 32px auto;
-        // display: inline-block;
     }
 
     &__logo{

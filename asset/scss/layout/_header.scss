@@ -4,6 +4,8 @@
  @use "../foundation/variable" as *;
  @use "../object/utility/list" as *;
 
+
+// font-size
  .font-xs{
     font-size: 10px;
  }
@@ -21,7 +23,7 @@
  }
 
 
-
+// l-header
  .l-header{
     &__top{
         position: relative;
@@ -30,8 +32,8 @@
         background-color: $c-light-blue-01;
     }
 
-    // head
-    &__head{
+    // top-first
+    &__top--first{
         justify-content: space-between;
         align-items: center;
         display: flex;
@@ -39,7 +41,7 @@
         position: relative;
     } 
 
-    &__img{
+    &__logo{
         width: 149px;
     }
 
@@ -118,13 +120,12 @@
         }
     }
 
-
-    // main
-    &__main{
+    // top-second
+    &__top--second{
         height: 287px;
     }   
 
-    &__maintext{
+    &__main-text{
         margin: 0 32px;
         z-index: 3;
         position: relative;
@@ -136,13 +137,13 @@
         position: relative;
     }
 
-    &__content{
+    &__description{
         margin-left: 32px;
         width: 47.5%;
         @extend .font-ms;
     }
 
-    &__backimg{
+    &__back-img{
         position: relative;
         top: -220px;
         z-index: 2;
@@ -150,32 +151,33 @@
         margin: 0 auto;
     }
 
+    // navi-menu
     &__menu{
         background-color: $c-white;
 
-        &_content{
+        &-content{
             display: flex;
             margin: 60px auto 48px auto;
             align-items: center;
             justify-content: center;
         }
 
-        &_title{
+        &-title{
             @extend .font-m;
             font-weight: bold;
             margin-right: 50px;
         }
 
-        &_nav{
+        &-nav{
             display: flex;
             margin-bottom: 16px;
         }
 
-        &_list{
+        &-list{
             display: flex;
         }
 
-        &_item{
+        &-item{
             vertical-align: middle;
             margin-right: 30px;
             text-align: center;
@@ -209,7 +211,7 @@
             }
         }
 
-        &_icon{
+        &-icon{
             width: 55px;
             display: flex;
             margin: auto;

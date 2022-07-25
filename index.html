@@ -9,23 +9,21 @@
 
         <title>WeXpats（ウィーエクスパッツ）- Make Japan closer -</title>
         <meta name="description" content="WeXpatsは、日本で働きたい外国人のための多言語対応ポータルサイトです。求人検索サイト、Q&Aコミュニティ、情報記事サイト、SNSページなど、日常に寄り添ったサービスを提供しています。母国での日本に関する情報収集から、日本国内での仕事探しまで、日本で活躍したい外国人の方々を様々な場面でサポートします。">
-        <link rel="icon" href="img/" type="image/png" />
-
-        <link rel="stylesheet" href="/asset/scss/style.css">
-        <link rel="stylesheet" href="/asset/scss/reset.css">
+        <link rel="icon" href="asset/img/favicon/favicon.ico" type="image/png" />
+        <link rel="stylesheet" href="asset/css/style.css">
+        <link rel="stylesheet" href="asset/css/reset.css">
     </head>
 
     <body>
+        <!--header-->
         <header class="l-header">
-            <!--inner-->
             <div class="l-header__top c-inner__header">
-                <!--icon, lang-->
-                <div class="l-header__head">
-                    <div class="l-header__img">
+                <div class="l-header__top--first">
+                    <div class="l-header__logo">
                         <img src="asset/img/header/wexpats.svg" alt="">
                     </div>
                     <div class="l-header__lang-select">
-                        <ul class="l-header__lang-list">
+                        <ul class="l-header__lang-list u-list--undot">
                             <li class="l-header__lang-list-head">
                                 日本語
                             </li>
@@ -42,59 +40,57 @@
                         </ul>
                     </div>
                 </div>
-                <!--title, image-->
-                <div class="l-header__main">
-                    <div class="l-header__maintext">
+                <div class="l-header__top--second">
+                    <div class="l-header__main-text">
                         <div class="l-header__title">
                             <img src="asset/img/header/img-destination-copy.svg" alt="">
                         </div>
-                        <p class="l-header__content">
+                        <p class="l-header__description">
                             WeXpatsは誰もが安心して日本でのキャリアを歩むことができる世界を実現します。
                         </p>
                     </div>
-                    <!--img?-->
-                    <div class="l-header__backimg">
+                    <div class="l-header__back-img">
                         <img src="asset/img/header/bg-destination-fv.png" alt="">
                     </div>
                 </div>
             </div>
             <!--menu-->
             <div class="l-header__menu">
-                <div class="l-header__menu_content">
-                    <div class="l-header__menu_title">
+                <div class="l-header__menu-content">
+                    <div class="l-header__menu-title">
                         サービス一覧
                     </div>
-                    <nav class="l-header__menu_nav">
-                        <ul class="u-list--undot l-header__menu_list">
-                            <li class="l-header__menu_item">
+                    <nav class="l-header__menu-nav">
+                        <ul class="u-list--undot l-header__menu-list">
+                            <li class="l-header__menu-item">
                                 <a href="#jobs">
                                     <img 
                                         src="asset/img/header/icon-anchor-jobs.svg"
-                                        class="l-header__menu_icon">
+                                        class="l-header__menu-icon">
                                     Jobs
                                 </a>
                             </li>
-                            <li class="l-header__menu_item">
+                            <li class="l-header__menu-item">
                                 <a href="#comm">
                                     <img 
                                         src="asset/img/header/icon-anchor-forum.svg"
-                                        class="l-header__menu_icon">
+                                        class="l-header__menu-icon">
                                     Community
                                 </a>
                             </li>
-                            <li class="l-header__menu_item">
+                            <li class="l-header__menu-item">
                                 <a href="#art">
                                     <img 
                                             src="asset/img/header/icon-anchor-guide.svg"
-                                            class="l-header__menu_icon">                                
+                                            class="l-header__menu-icon">                                
                                     Articles
                                 </a>
                             </li>
-                            <li class="l-header__menu_item">
-                                <span class="l-header__menu_imgback">
+                            <li class="l-header__menu-item">
+                                <span class="l-header__menu-img-back">
                                     <img 
                                         src="asset/img/header/icon-anchor-biz.svg"
-                                        class="l-header__menu_icon">
+                                        class="l-header__menu-icon">
                                 </span>     
                                 <a href="for-company">法人の方へ</a>
                             </li>
@@ -103,7 +99,7 @@
                 </div>
             </div>
         </header>
-        
+        <!--main-->
         <main>
             <!--jobs-->
             <section class="c-section" id="jobs">
@@ -177,9 +173,8 @@
                     </div>
                 </div>
             </section>
-            <!--forCompany-->
+            <!--for-company-->
             <section class="c-section" id="for-company">
-                <!--inner-->
                 <div class="p-for-company c-section__content c-inner">
                     <div class="p-for-company__content">
                         <div class="p-for-company__imgwrap">
@@ -207,14 +202,12 @@
                 </div>
             </section>
         </main>
-
+        <!--footer-->
         <footer class="l-footer">
-            <!--inner-->
             <div class="l-footer__content c-inner">
-                <!--link-->
                 <div class="l-footer__lists">                
-                    <div class="l-footer__listwrap">
-                        <div class="l-footer__listhead">
+                    <div class="l-footer__list-wrap">
+                        <div class="l-footer__list-head">
                             サービス一覧
                         </div>
                         <ul class="l-footer__list u-list--undot">
@@ -236,7 +229,6 @@
                         </ul>
                     </div>
                 </div>
-                <!--icon, copyright-->
                 <div class="l-footer__bottom-item">
                     <div class="l-footer__logo">
                         <img src="asset/img/footer/wexpats_white.png">
@@ -248,10 +240,10 @@
             </div>
         </footer>
     </body>
+    <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            console.log($(this));
             $(".l-header__lang-select").on("click", langListOpen);
         });
 
