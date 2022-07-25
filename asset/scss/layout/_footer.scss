@@ -1,0 +1,71 @@
+/*--------------------------------------*
+ * header
+ *--------------------------------------*/
+ @use "../foundation/variable" as *;
+ @use "../object/utility/list" as *;
+
+ .font-xs{
+    font-size: 10px;
+ }
+
+ .font-s{
+    font-size: 12px;
+ }
+
+ .font-ms{
+    font-size: 14px;
+ }
+
+ .font-m{
+    font-size: 16px;
+ }
+
+ .l-footer{
+   color: $c-light-gray-04;
+
+    &__content{
+        background-color: $c-dark-gray;
+        margin: 0 auto;
+        padding: 12px auto;
+    }
+
+    &__lists{
+      display: flex;
+      justify-content: space-between;
+      margin: 12px;
+      border-bottom: solid 0.8px $c-dark-navy-02;
+      padding-bottom: 25px;
+    }
+
+    &__listwrap {
+      & *{
+      width: 374px;
+      }
+    }
+
+    &__listhead{
+      @extend .font-s;
+      font-weight: bold;
+      margin: 8px 8px 15px 8px;
+    }
+
+    &__list *{
+        @extend .font-s;
+        margin: 8px;
+    }
+
+    &__bottom-item{
+      margin: 25px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__logo{
+      width: 140px;
+    }
+
+    &__copyright{
+      @extend .font-s;
+    }
+ }

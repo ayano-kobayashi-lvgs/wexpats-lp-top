@@ -1,0 +1,61 @@
+@use "../../foundation/variable" as *;
+
+.font-m{
+   font-size: 16px;
+}
+ 
+
+.p-for-company{
+    background-color: $c-white;
+
+    &__content{
+        margin: 48px 32px 96px 32px;
+        display: flex;
+        box-shadow: 0 2px 2px 0 $c-light-gray-03;
+        border-radius: 20px;
+    }
+
+    &__imgwrap{
+        width: 470px;
+        height: 311px;
+    }
+
+    &__img{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__description{
+        @extend .font-m;
+        text-align: center;
+        margin: 0 auto 32px auto;
+        // display: inline-block;
+    }
+
+    &__logo{
+        width: 116px;
+        margin: 20px auto;
+    }
+
+    &__title{
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: $c-light-blue-02;
+        border-width: 6px;
+        margin-bottom: 20px;
+    }
+
+    &__body{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__btn{
+        color: $c-dark-navy-01;
+        background-color: $c-white;
+        border: solid 2px $c-dark-navy-01;
+    }
+}

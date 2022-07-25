@@ -1,0 +1,56 @@
+/*--------------------------------------*
+ * section
+ *--------------------------------------*/
+
+ @use "../../foundation/variable" as *;
+
+ .font-ms{
+    font-size: 16px;
+ }
+
+ .font-xl{
+    font-size: 32px;
+ }
+
+
+ .c-section{
+    &__content{
+        background-color: $c-light-gray-01;
+    }
+
+    &__item{
+        display: flex;
+        margin: 48px 32px;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        width: 128px;
+        margin-bottom: 20px;
+    }
+
+    &__textwrap{
+        width: 49%;
+    }
+
+    &__title{
+        @extend .font-xl;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    &__text{
+        @extend .font-ms;
+        margin-bottom: 20px;
+    }
+
+    &__img{
+        width: 400px;
+    }
+
+    &__btn{
+        color: $c-white;
+        background-color: $c-green;
+        box-shadow: 0 2px 2px 0 $c-light-gray-02;
+    }
+ }
