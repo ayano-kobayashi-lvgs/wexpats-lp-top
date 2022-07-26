@@ -2,38 +2,17 @@
  * header
  *--------------------------------------*/
  @use "../foundation/variable" as *;
- @use "../object/utility/list" as *;
-
-
-// font-size
- .font-xs{
-    font-size: 10px;
- }
-
- .font-s{
-    font-size: 13px;
- }
-
- .font-ms{
-    font-size: 14px;
- }
-
- .font-m{
-    font-size: 16px;
- }
-
 
 // l-header
- .l-header{
-    &__top{
+ .l-header {
+    &__heading {
         position: relative;
         z-index: 1;    
         padding-top: 24px;
         background-color: $c-light-blue-01;
     }
 
-    // top-first
-    &__top--first{
+    &__sub-heading {
         justify-content: space-between;
         align-items: center;
         display: flex;
@@ -41,45 +20,38 @@
         position: relative;
     } 
 
-    &__logo{
+
+    &__logo {
         width: 149px;
     }
 
-    &__lang-select{
+    &__lang-select {
         width: 120px;
         left: 85%;
         top: 0;
         position: absolute;
         z-index: 5;
 
-        & * {
-            color: $c-dark-gray;
-            font-size: 14px;
-            text-align: left;
-        }
-
-        &--open{
+        &.is-open {
             background-color: $c-white;
             border-radius: 5px;
             box-shadow: 0 .5px 15px 1px $c-light-gray-05;
         }
     }
 
-    &__lang-list{
-
-        & > li {
-            padding: 12px 8px;
-        }
-        
-        &-head{
+    &__lang-list {        
+        &-selected {
             position: relative;
             text-align: center;
+            color: $c-dark-gray;
+            font-size: $font-ms;
+            padding: 12px 8px;
 
-            &:hover{
+            &:hover {
                 cursor: pointer;
             }
 
-            &::before{
+            &::before {
                 content: "";
                 position: absolute;
                 top: 18px;
@@ -89,7 +61,7 @@
                 background-color: $c-dark-gray;
             }
 
-            &::after{
+            &::after {
                 content: "";
                 position: absolute;
                 top: 20px;
@@ -102,48 +74,54 @@
             }
         }
 
-        &--second{
+        &-unselected {
             display: none;
+            font-size: $font-ms;
 
-            & > li {
+            & li {
                 padding: 12px 8px;
+            
                 
-                &:hover{
+                &:hover {
                     cursor: pointer;
                     background-color: $c-light-gray-01;
                 }
 
-                & > a {
+                & a {
                     text-decoration: none;
+                    color: $c-dark-gray;        
                 }
+            }
+
+            &.is-open {
+                display: block;
             }
         }
     }
 
-    // top-second
-    &__top--second{
+    &__main {
         height: 287px;
     }   
 
-    &__main-text{
+    &__main-text {
         margin: 0 32px;
         z-index: 3;
         position: relative;
     }
 
-    &__title{
+    &__title {
         margin: 48px auto 29px 32px;
         z-index: 4;
         position: relative;
     }
 
-    &__description{
+    &__description {
         margin-left: 32px;
         width: 47.5%;
-        @extend .font-ms;
+        font-size: $font-ms;
     }
 
-    &__back-img{
+    &__main-view {
         position: relative;
         top: -220px;
         z-index: 2;
@@ -152,53 +130,53 @@
     }
 
     // navi-menu
-    &__menu{
+    &__menu {
         background-color: $c-white;
 
-        &-content{
+        &-content {
             display: flex;
             margin: 60px auto 48px auto;
             align-items: center;
             justify-content: center;
         }
 
-        &-title{
-            @extend .font-m;
+        &-title {
+            font-size: $font-m;
             font-weight: bold;
             margin-right: 50px;
         }
 
-        &-nav{
+        &-nav {
             display: flex;
             margin-bottom: 16px;
         }
 
-        &-list{
+        &-list {
             display: flex;
         }
 
-        &-item{
+        &-item {
             vertical-align: middle;
             margin-right: 30px;
             text-align: center;
             position: relative;
 
-            &:hover{
+            &:hover {
                 cursor: pointer;
             }
 
             & > a {
                 color: $c-light-gray-02;
-                @extend .font-ms;
+                font-size: $font-ms;
                 text-decoration: none;
                 text-align: center;
             }
 
-            &:last-child{
+            &:last-child {
                 margin-right: 0;
                 margin-left: 30px;
             
-                &:before{
+                &:before {
                     content: "";
                     position: absolute;
                     width: 0.5px;
@@ -211,7 +189,7 @@
             }
         }
 
-        &-icon{
+        &-icon {
             width: 55px;
             display: flex;
             margin: auto;
@@ -222,4 +200,3 @@
         }
     }
  }
-

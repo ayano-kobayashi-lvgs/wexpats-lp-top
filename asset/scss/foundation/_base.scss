@@ -13,6 +13,7 @@
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
 html {
 	font-size: 62.5%;
 	line-height: 1.6;
@@ -20,6 +21,7 @@ html {
 	scroll-behavior: smooth;
 	letter-spacing: 1.5;
 }
+
 body {
 	color: $c-black;
 	font-size: 1.6rem;
@@ -39,15 +41,12 @@ object {
 }
 
 a {
-    // 色変更
-	color: #0066c0;
 	text-decoration: underline;
 	transition: 0.4s;
     
     :hover {
 	    opacity: 0.8;
-    }
-    :hover img {
+ 		img {
         text-decoration: none;
         opacity: 0.8;
         -webkit-transition: all 0.3s;
@@ -55,5 +54,6 @@ a {
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
-    }
+	    }
+	}
 }

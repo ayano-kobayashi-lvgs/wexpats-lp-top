@@ -1,26 +1,25 @@
+/*--------------------------------------*
+ * company
+ *--------------------------------------*/
 @use "../../foundation/variable" as *;
-
-.font-m{
-   font-size: 16px;
-}
  
 // p-for-company
-.p-for-company{
+.p-for-company {
     background-color: $c-white;
 
-    &__content{
+    &__content {
         margin: 48px 32px 96px 32px;
         display: flex;
         box-shadow: 0 2px 2px 0 $c-light-gray-03;
         border-radius: 20px;
     }
 
-    &__imgwrap{
+    &__img-wrap {
         width: 470px;
         height: 311px;
     }
 
-    &__img{
+    &__img {
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         object-fit: cover;
@@ -28,18 +27,18 @@
         height: 100%;
     }
 
-    &__description{
-        @extend .font-m;
+    &__description {
+        font-size: $font-m;
         text-align: center;
         margin: 0 auto 32px auto;
     }
 
-    &__logo{
+    &__logo {
         width: 116px;
         margin: 20px auto;
     }
 
-    &__title{
+    &__title {
         font-weight: bold;
         text-decoration: underline;
         text-decoration-color: $c-light-blue-02;
@@ -47,14 +46,21 @@
         margin-bottom: 20px;
     }
 
-    &__body{
+    &__body {
         text-align: center;
         margin-bottom: 20px;
     }
 
-    &__btn{
-        color: $c-dark-navy-01;
+    &__btn {
         background-color: $c-white;
         border: solid 2px $c-dark-navy-01;
+        
+        & a {
+            color: $c-dark-navy-01;
+        }
+
+        &:hover {
+            background-color: $c-light-gray-01;
+        }
     }
 }

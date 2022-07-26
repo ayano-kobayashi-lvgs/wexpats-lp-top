@@ -2,8 +2,8 @@
  * foundation
  *--------------------------------------*/
  @use "foundation/base";
-
  @use "foundation/variable";
+ @use "foundation/reset";
 
 /*--------------------------------------*
  * header
@@ -29,4 +29,3 @@
  * footer
  *--------------------------------------*/
  @use "layout/footer";
-

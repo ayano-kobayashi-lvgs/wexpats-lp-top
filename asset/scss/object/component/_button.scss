@@ -1,16 +1,11 @@
 /*--------------------------------------*
  * button
  *--------------------------------------*/
-
  @use "../../foundation/variable" as *;
 
- .font-ms{
-    font-size: 16px;
- }
-
- .c-btn{
+ .c-btn {
     text-decoration: none;
-    @extend .font-ms;
+    font-size: $font-m;
     font-weight: bold;
     width: 250px;
     padding: 15px 0;
@@ -19,7 +14,7 @@
     border-radius: 10px;
     justify-content: center;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
 }

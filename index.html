@@ -11,36 +11,33 @@
         <meta name="description" content="WeXpatsは、日本で働きたい外国人のための多言語対応ポータルサイトです。求人検索サイト、Q&Aコミュニティ、情報記事サイト、SNSページなど、日常に寄り添ったサービスを提供しています。母国での日本に関する情報収集から、日本国内での仕事探しまで、日本で活躍したい外国人の方々を様々な場面でサポートします。">
         <link rel="icon" href="asset/img/favicon/favicon.ico" type="image/png" />
         <link rel="stylesheet" href="asset/css/style.css">
-        <link rel="stylesheet" href="asset/css/reset.css">
     </head>
 
     <body>
         <!--header-->
         <header class="l-header">
-            <div class="l-header__top c-inner__header">
-                <div class="l-header__top--first">
+            <div class="l-header__heading c-inner__header">
+                <div class="l-header__sub-heading">
                     <div class="l-header__logo">
-                        <img src="asset/img/header/wexpats.svg" alt="">
+                        <img src="asset/img/header/wexpats.svg" width="149px" height="auto" alt="">
                     </div>
-                    <div class="l-header__lang-select">
-                        <ul class="l-header__lang-list u-list--undot">
-                            <li class="l-header__lang-list-head">
-                                日本語
-                            </li>
-                            <ul class="l-header__lang-list--second">
-                                <li><a>English</a></li>
-                                <li><a>Tiếng Việt</a></li>
-                                <li><a>မြန်မာ</a></li>
-                                <li><a>Indonesia</li>
-                                <li><a>中文 (繁體)</a></li>
-                                <li><a>中文 (繁體)</a></li>
-                                <li><a>Português</a></li>
-                                <li><a>ภาษาไทย</a></li>
-                            </ul>
+                    <div class="l-header__lang-select js-accordion__lang-list">
+                        <p class="l-header__lang-list-selected">
+                            日本語
+                        </p>
+                        <ul class="l-header__lang-list-unselected">
+                            <li><a>English</a></li>
+                            <li><a>Tiếng Việt</a></li>
+                            <li><a>မြန်မာ</a></li>
+                            <li><a>Indonesia</li>
+                            <li><a>中文 (繁體)</a></li>
+                            <li><a>中文 (繁體)</a></li>
+                            <li><a>Português</a></li>
+                            <li><a>ภาษาไทย</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="l-header__top--second">
+                <div class="l-header__main">
                     <div class="l-header__main-text">
                         <div class="l-header__title">
                             <img src="asset/img/header/img-destination-copy.svg" alt="">
@@ -49,8 +46,8 @@
                             WeXpatsは誰もが安心して日本でのキャリアを歩むことができる世界を実現します。
                         </p>
                     </div>
-                    <div class="l-header__back-img">
-                        <img src="asset/img/header/bg-destination-fv.png" alt="">
+                    <div class="l-header__main-view">
+                        <img src="asset/img/header/bg-destination-fv.png" width="1000px" height="auto" alt="">
                     </div>
                 </div>
             </div>
@@ -64,33 +61,26 @@
                         <ul class="u-list--undot l-header__menu-list">
                             <li class="l-header__menu-item">
                                 <a href="#jobs">
-                                    <img 
-                                        src="asset/img/header/icon-anchor-jobs.svg"
-                                        class="l-header__menu-icon">
+                                    <img class="l-header__menu-icon" src="asset/img/header/icon-anchor-jobs.svg"
+                                        >
                                     Jobs
                                 </a>
                             </li>
                             <li class="l-header__menu-item">
                                 <a href="#comm">
-                                    <img 
-                                        src="asset/img/header/icon-anchor-forum.svg"
-                                        class="l-header__menu-icon">
+                                    <img class="l-header__menu-icon" src="asset/img/header/icon-anchor-forum.svg">
                                     Community
                                 </a>
                             </li>
                             <li class="l-header__menu-item">
                                 <a href="#art">
-                                    <img 
-                                            src="asset/img/header/icon-anchor-guide.svg"
-                                            class="l-header__menu-icon">                                
+                                    <img class="l-header__menu-icon" src="asset/img/header/icon-anchor-guide.svg">                                
                                     Articles
                                 </a>
                             </li>
                             <li class="l-header__menu-item">
                                 <span class="l-header__menu-img-back">
-                                    <img 
-                                        src="asset/img/header/icon-anchor-biz.svg"
-                                        class="l-header__menu-icon">
+                                    <img src="asset/img/header/icon-anchor-biz.svg" class="l-header__menu-icon">
                                 </span>     
                                 <a href="for-company">法人の方へ</a>
                             </li>
@@ -105,19 +95,21 @@
             <section class="c-section" id="jobs">
                 <div class="p-jobs c-section__content c-inner"> 
                     <div class="c-section__item">
-                        <div class="c-section__textwrap">                           
+                        <div class="c-section__text-wrap">                           
                             <div class="c-section__logo">
                                 <img src="asset/img/main/jobs/wexpats_jobs.svg">
                             </div>
-                            <div class="c-section__title">
+                            <p class="c-section__title">
                                 日本でしごと探すなら
-                            </div>
-                            <div class="c-section__text">
+                            </p>
+                            <p class="c-section__body">
                                 国内最大級の外国人向け求人サイト。日本語レベルから求人を一括検索することで、条件のマッチする求人を簡単に見つけることができます。
-                            </div>
-                            <a class="c-btn c-section__btn">
-                                求人を探す
-                            </a>
+                            </p>
+                            <p class="c-btn c-section__btn">
+                                <a>
+                                    求人を探す
+                                </a>
+                            </p>
                         </div>
                         <div class="c-section__img">
                             <img src="asset/img/main/jobs/img-service-jobs.png">
@@ -132,19 +124,21 @@
                         <div class="c-section__img">
                             <img src="asset/img/main/community/img-service-forum.png">
                         </div>
-                        <div class="c-section__textwrap">                           
+                        <div class="c-section__text-wrap">                           
                             <div class="c-section__logo">
                                 <img src="asset/img/main/community/wexpats_forum.svg">
                             </div>
-                            <div class="c-section__title">
+                            <p class="c-section__title">
                                 日本に関する疑問点を解決できるQ＆Aコミュニティ
-                            </div>
-                            <div class="c-section__text">
+                            </p>
+                            <p class="c-section__body">
                                 これから日本へ留学したい、日本で就労したいと考えている人と、既に日本で暮らしている人が、疑問点や経験談を共有し合うことで、それぞれの抱えている悩みを解消できます。    
-                            </div>
-                            <a class="c-btn c-section__btn">
-                                コミュニティに参加する
-                            </a>
+                            </p>
+                            <p class="c-btn c-section__btn">
+                                <a>
+                                    コミュニティに参加する
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -153,19 +147,21 @@
             <section class="c-section" id="art">
                 <div class="p-art c-section__content c-inner"> 
                     <div class="c-section__item">
-                        <div class="c-section__textwrap">                           
+                        <div class="c-section__text-wrap">                           
                             <div class="c-section__logo">
                                 <img src="asset/img/main/articles/wexpats_guide.svg">
                             </div>
-                            <div class="c-section__title">
+                            <p class="c-section__title">
                                 日本での生活や文化について母国語で読める記事メディア
-                            </div>
-                            <div class="c-section__text">
+                            </p>
+                            <p class="c-section__body">
                                 日本で生活するために必要となるお役立ち情報を、日本在住の外国人ライターがお届けします。    
-                            </div>
-                            <a class="c-btn c-section__btn">
-                                記事を読む
-                            </a>
+                            </p>
+                            <p class="c-btn c-section__btn">
+                                <a>
+                                    記事を読む
+                                </a>
+                            </p>
                         </div>
                         <div class="c-section__img">
                             <img src="asset/img/main/articles/img-service-guide.png">
@@ -177,7 +173,7 @@
             <section class="c-section" id="for-company">
                 <div class="p-for-company c-section__content c-inner">
                     <div class="p-for-company__content">
-                        <div class="p-for-company__imgwrap">
+                        <div class="p-for-company__img-wrap">
                             <img 
                                 class="p-for-company__img"
                                 src="asset/img/main/company/img-biz.png">
@@ -186,17 +182,19 @@
                             <div class="p-for-company__logo">
                                 <img src="asset/img/main/company/wexpats_biz.svg">
                             </div>
-                            <div class="p-for-company__title">
+                            <p class="p-for-company__title">
                                 外国人採用を検討中の企業様へ
-                            </div>
-                            <div class="p-for-company__body">
+                            </p>
+                            <p class="p-for-company__body">
                                 外国人採用の現場に役立つ情報を届ける。<br>
                                 すべての記事を行政書士が監修。<br>
                                 外国人雇用のリアルな疑問を解決します。
-                            </div>
-                            <a class="c-btn p-for-company__btn">
-                                詳しくはこちら
-                            </a>
+                            </p>
+                            <p class="c-btn p-for-company__btn">
+                                <a>
+                                    詳しくはこちら
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -207,10 +205,10 @@
             <div class="l-footer__content c-inner">
                 <div class="l-footer__lists">                
                     <div class="l-footer__list-wrap">
-                        <div class="l-footer__list-head">
+                        <div class="l-footer__list-ttl">
                             サービス一覧
                         </div>
-                        <ul class="l-footer__list u-list--undot">
+                        <ul class="l-footer__list-items">
                             <li>WeXpats Guide</li>
                             <li>WeXpats Forum</li>
                             <li>WeXpats Jobs</li>
@@ -218,11 +216,11 @@
                             <li>WeXpats Biz</li>
                         </ul>
                     </div>
-                    <div class="l-footer__listwrap">
-                        <div class="l-footer__listhead">
+                    <div class="l-footer__list-wrap">
+                        <div class="l-footer__list-ttl">
                             このサイトについて
                         </div>
-                        <ul class="l-footer__list u-list--undot">
+                        <ul class="l-footer__list-items">
                             <li>利用規約</li>
                             <li>運営会社</li>
                             <li>お問い合わせ</li>
@@ -244,17 +242,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $(".l-header__lang-select").on("click", langListOpen);
+            $(".js-accordion__lang-list").on("click", slideUpAndDownLangList);
         });
 
-        function langListOpen(){
-            $(this).toggleClass("l-header__lang-select--open");
-
-            if ($(this).hasClass("l-header__lang-select--open")) {
-                $(this).children().children(".l-header__lang-list--second").css("display", "block");
-            } else {
-                $(this).children().children(".l-header__lang-list--second").css("display", "none");
-            }
+        function slideUpAndDownLangList(){
+            $(this).toggleClass("is-open");
+            $(this).children(".l-header__lang-list-unselected").toggleClass("is-open");
         }
     </script>
 </html>

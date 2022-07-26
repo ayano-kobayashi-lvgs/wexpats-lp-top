@@ -2,36 +2,18 @@
  * header
  *--------------------------------------*/
  @use "../foundation/variable" as *;
- @use "../object/utility/list" as *;
-
- // font-size
- .font-xs{
-    font-size: 10px;
- }
-
- .font-s{
-    font-size: 12px;
- }
-
- .font-ms{
-    font-size: 14px;
- }
-
- .font-m{
-    font-size: 16px;
- }
 
  // l-footer
- .l-footer{
+ .l-footer {
    color: $c-light-gray-04;
 
-    &__content{
+    &__content {
         background-color: $c-dark-gray;
         margin: 0 auto;
         padding: 12px auto;
     }
 
-    &__lists{
+    &__lists {
       display: flex;
       justify-content: space-between;
       margin: 12px;
@@ -39,35 +21,36 @@
       padding-bottom: 25px;
     }
 
-    &__list-wrap{
-      & *{
+    &__list-wrap {
       width: 374px;
-      }
     }
 
-    &__list-head{
-      @extend .font-s;
+    &__list-ttl {
+      font-size: $font-xs;
       font-weight: bold;
       margin: 8px 8px 15px 8px;
     }
 
-    &__list *{
-        @extend .font-s;
+    &__list-items {
+        > li{
+        font-size: $font-xs;
         margin: 8px;
+        }
     }
 
-    &__bottom-item{
+    &__bottom-item {
       margin: 25px 12px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    &__logo{
+    &__logo {
       width: 140px;
     }
 
-    &__copyright{
-      @extend .font-s;
+    &__copyright {
+      font-size: $font-xs;
     }
  }
+ 
