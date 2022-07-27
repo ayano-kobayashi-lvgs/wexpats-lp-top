@@ -1,0 +1,31 @@
+/*--------------------------------------*
+ * foundation
+ *--------------------------------------*/
+ @use "foundation/base";
+ @use "foundation/variable";
+ @use "foundation/reset";
+
+/*--------------------------------------*
+ * header
+ *--------------------------------------*/
+ @use "layout/header";
+
+/*--------------------------------------*
+ * component
+ *--------------------------------------*/
+ @use "object/component/inner";
+ @use "object/component/button";
+ @use "object/component/section";
+ 
+/*--------------------------------------*
+ * project
+ *--------------------------------------*/
+ @use "object/project/articles";
+ @use "object/project/jobs";
+ @use "object/project/community";
+ @use "object/project/company";
+ 
+/*--------------------------------------*
+ * footer
+ *--------------------------------------*/
+ @use "layout/footer";

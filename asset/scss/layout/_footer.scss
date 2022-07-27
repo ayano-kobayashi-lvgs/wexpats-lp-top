@@ -1,0 +1,64 @@
+/*--------------------------------------*
+ * header
+ *--------------------------------------*/
+ @use "../foundation/variable" as *;
+
+ // l-footer
+ .l-footer {
+   color: $c-light-gray-04;
+
+    &__content {
+      background-color: $c-dark-gray;
+      margin: 0 auto;
+      padding: 12px auto;
+    }
+
+    &__lists {
+      display: flex;
+      justify-content: space-between;
+      margin: 12px;
+      border-bottom: solid 0.8px $c-dark-navy-02;
+      padding-bottom: 25px;
+    }
+
+    &__list-wrap {
+      width: 374px;
+    }
+
+    &__list-ttl {
+      font-size: $font-xs;
+      font-weight: bold;
+      margin: 8px 8px 15px 8px;
+    }
+
+    &__list-items {
+      > li {
+        margin: 8px;
+        font-size: $font-xs;
+      }
+
+      a {
+        color: $c-white;
+        
+        &:hover {
+          text-decoration: underline;
+          cursor: default;
+        }  
+      }
+    }
+
+    &__bottom-item {
+      margin: 25px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__logo {
+      width: 140px;
+    }
+
+    &__copyright {
+      font-size: $font-xs;
+    }
+ }

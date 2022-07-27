@@ -1,0 +1,202 @@
+/*--------------------------------------*
+ * header
+ *--------------------------------------*/
+ @use "../foundation/variable" as *;
+
+// l-header
+ .l-header {
+    &__heading {
+        position: relative;
+        z-index: 1;    
+        padding-top: 24px;
+        background-color: $c-light-blue-01;
+    }
+
+    &__sub-heading {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        margin: 0 32px;
+        position: relative;
+    } 
+
+
+    &__logo {
+        width: 149px;
+    }
+
+    &__lang-select {
+        width: 120px;
+        left: 85%;
+        top: 0;
+        position: absolute;
+        z-index: 5;
+
+        &.is-open {
+            background-color: $c-white;
+            border-radius: 5px;
+            box-shadow: 0 .5px 15px 1px $c-light-gray-05;
+        }
+    }
+
+    &__lang-list {        
+        &-selected {
+            position: relative;
+            text-align: center;
+            color: $c-dark-gray;
+            font-size: $font-ms;
+            padding: 12px 8px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 18px;
+                left: 90px;
+                width: 2px;
+                height: 12px;
+                background-color: $c-dark-gray;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 20px;
+                left: 100px;
+                width: 0;
+                height: 0;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: 6px solid $c-dark-gray;
+            }
+        }
+
+        &-unselected {
+            display: none;
+            font-size: $font-ms;
+
+            & li {
+                padding: 12px 8px;
+            
+                
+                &:hover {
+                    cursor: pointer;
+                    background-color: $c-light-gray-01;
+                }
+
+                & a {
+                    text-decoration: none;
+                    color: $c-dark-gray;        
+                }
+            }
+
+            &.is-open {
+                display: block;
+            }
+        }
+    }
+
+    &__main {
+        height: 287px;
+    }   
+
+    &__main-text {
+        margin: 0 32px;
+        z-index: 3;
+        position: relative;
+    }
+
+    &__title {
+        margin: 48px auto 29px 32px;
+        z-index: 4;
+        position: relative;
+    }
+
+    &__description {
+        margin-left: 32px;
+        width: 47.5%;
+        font-size: $font-ms;
+    }
+
+    &__main-view {
+        position: relative;
+        top: -220px;
+        z-index: 2;
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    // navi-menu
+    &__menu {
+        background-color: $c-white;
+
+        &-content {
+            display: flex;
+            margin: 60px auto 48px auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-title {
+            font-size: $font-m;
+            font-weight: bold;
+            margin-right: 50px;
+        }
+
+        &-nav {
+            display: flex;
+            margin-bottom: 16px;
+        }
+
+        &-list {
+            display: flex;
+        }
+
+        &-item {
+            vertical-align: middle;
+            margin-right: 30px;
+            text-align: center;
+            position: relative;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            a {
+                color: $c-light-gray-02;
+                font-size: $font-ms;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            &:last-child {
+                margin-right: 0;
+                margin-left: 30px;
+            
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 0.5px;
+                    height: 50px;
+                    background-color: $c-light-gray-03;
+                    display: inline-block;
+                    top: 0;
+                    left: -30px;
+                }
+            }
+        }
+
+        &-icon {
+            width: 55px;
+            display: flex;
+            margin: auto;
+            background-color: $c-light-gray-01;
+            border-radius: 25%;
+            padding: 3px;
+            position: relative;
+        }
+    }
+ }
