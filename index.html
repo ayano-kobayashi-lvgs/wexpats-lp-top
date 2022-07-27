@@ -21,11 +21,11 @@
                     <div class="l-header__logo">
                         <img src="asset/img/header/wexpats.svg" width="149px" height="auto" alt="">
                     </div>
-                    <div class="l-header__lang-select js-toggle__lang-list">
+                    <div class="l-header__lang-select js-toggleTrigger">
                         <p class="l-header__lang-list-selected">
                             日本語
                         </p>
-                        <ul class="l-header__lang-list-unselected js-toggle__lang-list-unselected">
+                        <ul class="l-header__lang-list-unselected js-toggleTarget">
                             <li><a href="">English</a></li>
                             <li><a href="">Tiếng Việt</a></li>
                             <li><a href="">မြန်မာ</a></li>
@@ -243,6 +243,7 @@
     <script type="text/javascript">
 
         $(".js-toggleTrigger").on("click", function() {
+            $(".js-toggleTrigger").toggleClass("is-open");
             $(".js-toggleTarget").toggleClass("is-open");
         });
 
