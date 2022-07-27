@@ -241,16 +241,10 @@
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
-        $(function(){
-            $(".js-toggle__lang-list").on("click", slideUpAndDownLangList);
+
+        $(".js-toggleTrigger").on("click", function() {
+            $(".js-toggleTarget").toggleClass("is-open");
         });
 
-        function slideUpAndDownLangList(){
-            let self = $(this);
-            let unselectedList = $(this).children(".js-toggle__lang-list-unselected"); 
-
-            self.toggleClass("is-open");
-            unselectedList.toggleClass("is-open");
-        }
     </script>
 </html>
