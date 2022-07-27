@@ -8,9 +8,9 @@
    color: $c-light-gray-04;
 
     &__content {
-        background-color: $c-dark-gray;
-        margin: 0 auto;
-        padding: 12px auto;
+      background-color: $c-dark-gray;
+      margin: 0 auto;
+      padding: 12px auto;
     }
 
     &__lists {
@@ -32,10 +32,19 @@
     }
 
     &__list-items {
-        > li{
-        font-size: $font-xs;
+      > li {
         margin: 8px;
-        }
+        font-size: $font-xs;
+      }
+
+      a {
+        color: $c-white;
+        
+        &:hover {
+          text-decoration: underline;
+          cursor: default;
+        }  
+      }
     }
 
     &__bottom-item {

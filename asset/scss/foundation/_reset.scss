@@ -34,8 +34,8 @@ body {
 	min-width: 350px;
 	width: 100%;
 	overflow-x: hidden;
-    line-height: 1.6;
-    letter-spacing: 1.5;
+  line-height: 1.6;
+  letter-spacing: 1.5;
 }
 
 ol, ul {
@@ -67,21 +67,6 @@ object {
 }
 
 a {
-	color: #0066c0;
 	text-decoration: none;
 	transition: 0.4s;
-
-    &:hover {
-        opacity: 0.8;
-
-        img {
-            text-decoration: none;
-            opacity: 0.8;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            -ms-transition: all 0.3s;
-            -o-transition: all 0.3s;
-            transition: all 0.3s;
-          }          
-    }
 }

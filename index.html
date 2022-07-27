@@ -21,19 +21,19 @@
                     <div class="l-header__logo">
                         <img src="asset/img/header/wexpats.svg" width="149px" height="auto" alt="">
                     </div>
-                    <div class="l-header__lang-select js-accordion__lang-list">
+                    <div class="l-header__lang-select js-toggle__lang-list">
                         <p class="l-header__lang-list-selected">
                             日本語
                         </p>
-                        <ul class="l-header__lang-list-unselected">
-                            <li><a>English</a></li>
-                            <li><a>Tiếng Việt</a></li>
-                            <li><a>မြန်မာ</a></li>
-                            <li><a>Indonesia</li>
-                            <li><a>中文 (繁體)</a></li>
-                            <li><a>中文 (繁體)</a></li>
-                            <li><a>Português</a></li>
-                            <li><a>ภาษาไทย</a></li>
+                        <ul class="l-header__lang-list-unselected js-toggle__lang-list-unselected">
+                            <li><a href="">English</a></li>
+                            <li><a href="">Tiếng Việt</a></li>
+                            <li><a href="">မြန်မာ</a></li>
+                            <li><a href="">Indonesia</li>
+                            <li><a href="">中文 (繁體)</a></li>
+                            <li><a href="">中文 (繁體)</a></li>
+                            <li><a href="">Português</a></li>
+                            <li><a href="">ภาษาไทย</a></li>
                         </ul>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                                 国内最大級の外国人向け求人サイト。日本語レベルから求人を一括検索することで、条件のマッチする求人を簡単に見つけることができます。
                             </p>
                             <p class="c-btn c-section__btn">
-                                <a>
+                                <a href="">
                                     求人を探す
                                 </a>
                             </p>
@@ -135,7 +135,7 @@
                                 これから日本へ留学したい、日本で就労したいと考えている人と、既に日本で暮らしている人が、疑問点や経験談を共有し合うことで、それぞれの抱えている悩みを解消できます。    
                             </p>
                             <p class="c-btn c-section__btn">
-                                <a>
+                                <a href="">
                                     コミュニティに参加する
                                 </a>
                             </p>
@@ -158,7 +158,7 @@
                                 日本で生活するために必要となるお役立ち情報を、日本在住の外国人ライターがお届けします。    
                             </p>
                             <p class="c-btn c-section__btn">
-                                <a>
+                                <a href="">
                                     記事を読む
                                 </a>
                             </p>
@@ -191,7 +191,7 @@
                                 外国人雇用のリアルな疑問を解決します。
                             </p>
                             <p class="c-btn p-for-company__btn">
-                                <a>
+                                <a href="">
                                     詳しくはこちら
                                 </a>
                             </p>
@@ -209,11 +209,11 @@
                             サービス一覧
                         </div>
                         <ul class="l-footer__list-items">
-                            <li>WeXpats Guide</li>
-                            <li>WeXpats Forum</li>
-                            <li>WeXpats Jobs</li>
-                            <li>WeXpats ID</li>
-                            <li>WeXpats Biz</li>
+                            <li><a href="">WeXpats Guide</a></li>
+                            <li><a href="">WeXpats Forum</a></li>
+                            <li><a href="">WeXpats Jobs</a></li>
+                            <li><a href="">WeXpats ID</a></li>
+                            <li><a href="">WeXpats Biz</a></li>
                         </ul>
                     </div>
                     <div class="l-footer__list-wrap">
@@ -221,9 +221,9 @@
                             このサイトについて
                         </div>
                         <ul class="l-footer__list-items">
-                            <li>利用規約</li>
-                            <li>運営会社</li>
-                            <li>お問い合わせ</li>
+                            <li><a href="">利用規約</a></li>
+                            <li><a href="">運営会社</a></li>
+                            <li><a href="">お問い合わせ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -241,13 +241,16 @@
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $(".js-accordion__lang-list").on("click", slideUpAndDownLangList);
+        $(function(){
+            $(".js-toggle__lang-list").on("click", slideUpAndDownLangList);
         });
 
         function slideUpAndDownLangList(){
-            $(this).toggleClass("is-open");
-            $(this).children(".l-header__lang-list-unselected").toggleClass("is-open");
+            let self = $(this);
+            let unselectedList = $(this).children(".js-toggle__lang-list-unselected"); 
+
+            self.toggleClass("is-open");
+            unselectedList.toggleClass("is-open");
         }
     </script>
 </html>

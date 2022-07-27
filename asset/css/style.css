@@ -40,16 +40,8 @@ object {
 }
 
 a {
-  text-decoration: underline;
-  transition: 0.4s;
-}
-a :hover {
-  opacity: 0.8;
-}
-a :hover img {
   text-decoration: none;
-  opacity: 0.8;
-  transition: all 0.3s;
+  transition: 0.4s;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -121,17 +113,8 @@ object {
 }
 
 a {
-  color: #0066c0;
   text-decoration: none;
   transition: 0.4s;
-}
-a:hover {
-  opacity: 0.8;
-}
-a:hover img {
-  text-decoration: none;
-  opacity: 0.8;
-  transition: all 0.3s;
 }
 
 /*--------------------------------------*
@@ -268,7 +251,7 @@ a:hover img {
 .l-header__menu-item:hover {
   cursor: pointer;
 }
-.l-header__menu-item > a {
+.l-header__menu-item a {
   color: #8F8F8F;
   font-size: 14px;
   text-decoration: none;
@@ -463,8 +446,15 @@ a:hover img {
   margin: 8px 8px 15px 8px;
 }
 .l-footer__list-items > li {
-  font-size: 12px;
   margin: 8px;
+  font-size: 12px;
+}
+.l-footer__list-items a {
+  color: #FFFFFF;
+}
+.l-footer__list-items a:hover {
+  text-decoration: underline;
+  cursor: default;
 }
 .l-footer__bottom-item {
   margin: 25px 12px;
